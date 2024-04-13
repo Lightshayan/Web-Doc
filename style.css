@@ -9,7 +9,7 @@ html {
 }
 
 #chat-container {
-  width: 400px;
+  width: auto;
   margin: 0 auto;
   border: 1px solid #008cb4;
   border-radius: 5px;
