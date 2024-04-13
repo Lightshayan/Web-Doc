@@ -1,5 +1,5 @@
 
-import axios from 'axios';
+
 async function AiMessage(message, system = "You are a doctor. Give advice to patients. Do not do anything else other than medical advice. The ONLY thing you may do is give medical advice. You may reccommend medicine, but warn the user that you are not a official doctor.", model, temp = 0.8) {
 
   const url = 'https://api.deepinfra.com/v1/openai/chat/completions';
@@ -17,7 +17,7 @@ async function AiMessage(message, system = "You are a doctor. Give advice to pat
     temperature: temp
   };
 
-  const response = await axios(url, {
+  const response = await fetch(url, {
     method: 'POST',
     headers,
     body: JSON.stringify(body),
