@@ -6,13 +6,49 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="howtouse.html">How to use</a></li>
-  </ul>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      border: 0px solid rgb(221, 221, 221);
+      background-color: rgb(221, 221, 221);
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: #666;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: #fafafa;
+    }
+    
+    li a.active {
+      color: white;
+      background-color: #054cbe;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <ul>
+      <li><a class="active" href="Talk">Talk</a></li>
+      <li><a href="About">About</a></li>
+      <li><a href="TOS">TOS</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+    </ul>
+    
   <br>
-  <h2>AI Chatbot</h2>
+  <h2>AI Doctor</h2>
   <h4></h4>
   <div id="chat-container">
     <h2 id="CHATtext">MD Web</h2>

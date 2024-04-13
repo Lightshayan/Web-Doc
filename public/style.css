@@ -1,91 +1,34 @@
+@ -1,19 +1,19 @@
 @font-face {
   font-family: ggsans;
+  font-family: Arial;
   src: url(gg.ttf);
 }
 
 html {
   background-color: #ffffff;
   font-family: ggsans;
+  font-family: Arial;
 }
 
 #chat-container {
   width: 400px;
+  width: auto;
   margin: 0 auto;
   border: 1px solid #008cb4;
+  border: 1px solid #054cbe;
   border-radius: 5px;
   background-color: #0fe6e6;
+  background-color: rgb(221, 221, 221);
   padding: 10px;
 }
 
-#chat-messages {
-  height: 300px;
-  overflow-y: scroll;
-  margin-bottom: 10px;
-}
-
-#chat-input {
-  display: flex;
-}
-
-#user-input {
-  flex: 1;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 5px;
-}
-
+@ -37,7 +37,7 @@ html {
 #send-button {
   margin-left: 10px;
   padding: 5px 10px;
   background-color: #007bff;
+  background-color: #054cbe;
   color: #fff;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-}
-
-.user-message {
-  background-color: #f2f2f2;
-  padding: 5px;
-  margin-bottom: 10px;
-}
-
-.ai-message {
-  background-color: #001e57;
-  color: #fff;
-  padding: 5px;
-  margin-bottom: 10px;
-}
-
-.love {
-  font-family: Compact;
-}
-
-@media (max-width: 1200px) {
-  #chat-container {
-    width: 90%;
-  }
-
-  #chat-messages {
-    height: 200px;
-  }
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #000000;
-
-}
-li {
-  display: inline;
-}
-li {
-  float: left;
-}
-
-a {
-  display: block;
-  padding: 8px;
-  background-color: #dddddd;
-}
