@@ -1,4 +1,4 @@
-async function AiMessage(message, system = "be a helpful assistant", model, temp = 0.8) {
+async function AiMessage(message, system = "be a helpful doctor. ONLY answer medical questions. DO NOT ANSWER ANYTHING OTHER THAN MEDICAL QUESTIONS. Be kind and symphathetic to the user. Do not use emojis. Do not use slang. Write short and concise.", model, temp = 0.8) {
   const url = 'https://api.deepinfra.com/v1/openai/chat/completions';
   const headers = {
     'Content-Type': 'application/json',
