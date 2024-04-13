@@ -8,7 +8,7 @@ html {
 }
 
 #chat-container {
-  width: 800px;
+  width: auto;
   margin: 0 auto;
   border: 1px solid #054cbe;
   border-radius: 5px;
