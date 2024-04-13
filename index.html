@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MD Web | Your personal Doctor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="howtouse.html">How to use</a></li>
+  </ul>
+  <br>
+  <h2>AI Chatbot</h2>
+  <h4></h4>
+  <div id="chat-container">
+    <h2 id="CHATtext">MD Web</h2>
+  
+    <p>MD Web is not meant to replace your doctor. Please do not rely on MD Web.</p>
+    <p>MD Web works best with more information. Please provide as many details as possible in order for MD Web to preform the best it possibly can.</p>
+    <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script>eruda.init();</script>
+    <div id="chat-messages"></div>
+    <div id="chat-input">
+      <input type="text" id="user-input" placeholder="Ask me anything...">
+      <button id="send-button" onclick="AISend()">Send</button>
+    </div>
+  </div>
+  <b1 id="Love">Made with ❤️ by @Codershayan, , @gc1stg, and @deanvassilikas1 Please report any bugs so we can fix it!</b1>
+
+  
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("send-button").addEventListener("click", function() {
+      document.getElementById("CHATtext").style.display = "none";
+    });
+  </script>
+</body>
+</html>
