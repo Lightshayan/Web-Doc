@@ -1,19 +1,22 @@
 @font-face {
+
   font-family: Arial, Helvetica, sans-serif;
+
   src: url(gg.ttf);
 }
 
 html {
-  background-color: #95B8D1;
-  font-family: Georgia;
+
+  background-color: #ffffff;
+  font-family: ggsans;
 }
 
 #chat-container {
-  width: auto;
+  width: 400px;
   margin: 0 auto;
-  border: 1px solid #B8E0D2;
+  border: 1px solid #008cb4;
   border-radius: 5px;
-  background-color: #809BCE;
+  background-color: #0fe6e6;
   padding: 10px;
 }
 
@@ -30,8 +33,7 @@ html {
 #user-input {
   flex: 1;
   border: 1px solid #ccc;
-  background-color: #95B8D1;
-  color: #ffffff;
+
   border-radius: 5px;
   padding: 5px;
 }
@@ -91,6 +93,5 @@ a {
   padding: 8px;
   background-color: #dddddd;
 }
-::placeholder {
-  color: #ffffff;
-}
+
+
