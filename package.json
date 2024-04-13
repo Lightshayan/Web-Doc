@@ -1,0 +1,8 @@
+{
+    "name": "web-doc",
+    "description": "a really cool app",
+    "version": "20.12.2",
+    "engines": {
+      "node": "20.x"
+    }
+  }
