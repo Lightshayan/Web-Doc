@@ -4,6 +4,46 @@
   <meta charset="UTF-8">
   <title>MD Web</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      border: 0px solid rgb(221, 221, 221);
+      background-color: rgb(221, 221, 221);
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: #666;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #fafafa;
+    }
+
+    li a.active {
+      color: white;
+      background-color: #054cbe;
+    }
+    </style>
+    </head>
+    <body>
+
+    <ul>
+      <li><a class="active" href="Talk">Talk</a></li>
+      <li><a href="About">About</a></li>
+      <li><a href="tos">TOS</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+    </ul>
 </head>
 <body>
   <h2>AI Chatbot</h2>
