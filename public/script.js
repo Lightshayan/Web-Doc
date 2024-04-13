@@ -14,29 +14,21 @@ function AISend() {
   chatMessages.appendChild(aiTypingLi);
   scrollToBottom(chatMessages);
 
-  var xhr = new XMLHttpRequest();
-  xhr.open("POST", "/api?prompt=" + encodedPrompt);
-  xhr.setRequestHeader("Content-Type", "application/json");
-   xhr.onload = function () {
-     if (xhr.status === 200) {
-       var data = xhr.responseText;
-       var parsedData = JSON.parse(data);
-       var content = parsedData.choices[0].message.content;
 
-       aiTypingLi.remove(); // Remove the old "AI is typing..." message
-       var aiLi = document.createElement("li");
-       aiLi.classList.add("ai-message");
-       aiLi.textContent = content; // Use the extracted content here
-       chatMessages.appendChild(aiLi);
-       scrollToBottom(chatMessages);
-     } else {
-       console.error("Error: " + xhr.status);
-     }
-   }
-  xhr.onerror = function () {
-    console.error("Request failed");
-  };
-  xhr.send();
+  // reset to old but mostly working version //ok
+
+  // nice! it works
+      AiMessage(userInput, 'Be a helpful assistant.', "meta-llama/Llama-2-7b-chat-hf").then(response => {
+
+          resp2 = JSON.parse(response)
+         aiTypingLi.remove(); // Remove the old "AI is typing..." message
+         var aiLi = document.createElement("li");
+         aiLi.classList.add("ai-message");
+         aiLi.textContent = resp2.choices[0].message.content; // Use the extracted content here
+         chatMessages.appendChild(aiLi);
+         scrollToBottom(chatMessages);
+      })
+  
   document.getElementById("user-input").value = "";
 }
 
