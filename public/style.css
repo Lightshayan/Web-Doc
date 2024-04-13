@@ -1,17 +1,24 @@
 @ -1,19 +1,19 @@
 @font-face {
+<<<<<<< Updated upstream
   font-family: ggsans;
+=======
+>>>>>>> Stashed changes
   font-family: Arial;
   src: url(gg.ttf);
 }
 
 html {
   background-color: #ffffff;
+<<<<<<< Updated upstream
   font-family: ggsans;
+=======
+>>>>>>> Stashed changes
   font-family: Arial;
 }
 
 #chat-container {
+<<<<<<< Updated upstream
   width: 400px;
   width: auto;
   margin: 0 auto;
@@ -19,6 +26,12 @@ html {
   border: 1px solid #054cbe;
   border-radius: 5px;
   background-color: #0fe6e6;
+=======
+  width: auto;
+  margin: 0 auto;
+  border: 1px solid #054cbe;
+  border-radius: 5px;
+>>>>>>> Stashed changes
   background-color: rgb(221, 221, 221);
   padding: 10px;
 }
@@ -27,7 +40,10 @@ html {
 #send-button {
   margin-left: 10px;
   padding: 5px 10px;
+<<<<<<< Updated upstream
   background-color: #007bff;
+=======
+>>>>>>> Stashed changes
   background-color: #054cbe;
   color: #fff;
   border: none;
