@@ -88,3 +88,15 @@ a {
   padding: 8px;
   background-color: #dddddd;
 }
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+}
+
+.dark-mode {
+  
+  background-color: black;
+  color: white;
+}
