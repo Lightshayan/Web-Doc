@@ -5,15 +5,15 @@
 
 html {
   background-color: #ffffff;
-  font-family: ggsans;
+  font-family: Arial;
 }
 
 #chat-container {
-  width: 400px;
+  width: auto;
   margin: 0 auto;
-  border: 1px solid #008cb4;
+  border: 1px solid #054cbe;
   border-radius: 5px;
-  background-color: #0fe6e6;
+  background-color: rgb(221, 221, 221);
   padding: 10px;
 }
 
@@ -37,7 +37,7 @@ html {
 #send-button {
   margin-left: 10px;
   padding: 5px 10px;
-  background-color: #007bff;
+  background-color: #054cbe;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -74,7 +74,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #000000;
+  background-color: rgb(221, 221, 221);
 
 }
 li {
