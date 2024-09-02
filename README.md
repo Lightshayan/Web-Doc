@@ -1,3 +1,2 @@
 # Web-Doc
-This is a MakeSPP project. You can see the project over here:
-https://lightshayan.github.io/Web-Doc/
+This is a project made for a hackathon, MakeSPP 2023. Our source files have been open-sourced.
